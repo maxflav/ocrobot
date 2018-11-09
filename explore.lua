@@ -1,5 +1,6 @@
 robot = require("robot")
 component = require("component")
+computer = require("computer")
 math = require("math")
 navigation = component.navigation
 
