@@ -15,7 +15,7 @@ function getCurrentDistance ()
     end
 
     homeX, homeY, homeZ = homePos[1], homePos[2], homePos[3]
-    return math.max(homeX, homeY, homeZ)
+    return math.max(math.abs(homeX), math.abs(homeY), math.abs(homeZ))
 end
 
 function step ()
