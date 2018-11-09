@@ -70,6 +70,7 @@ function step ()
         robot.forward()
         newDistance = getCurrentDistance()
         if newDistance > originalDistance and originalDistance > 30 then
+            robot.back()
             shouldTurn = true
         end
     else
