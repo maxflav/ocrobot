@@ -89,4 +89,3 @@ while true do
     step()
     computer.beep(math.random() * (1500 - 300) + 300)
 end
-end
