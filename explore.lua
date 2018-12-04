@@ -20,13 +20,13 @@ end
 
 function step ()
     originalDistance = getCurrentDistance()
-    print(originalDistance)
+    -- print(originalDistance)
     blocked, whatsThere = robot.detect()
     shouldTurn = false
     if not blocked then
         robot.forward()
         newDistance = getCurrentDistance()
-        if newDistance > originalDistance and originalDistance > 2 then
+        if newDistance > originalDistance and originalDistance > 1 then
             -- print("too far go back")
             robot.back()
             shouldTurn = true
