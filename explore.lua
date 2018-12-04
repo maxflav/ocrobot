@@ -26,8 +26,8 @@ function step ()
     if not blocked then
         robot.forward()
         newDistance = getCurrentDistance()
-        if newDistance > originalDistance and originalDistance > 25 then
-            print("too far go back")
+        if newDistance > originalDistance and originalDistance > 2 then
+            -- print("too far go back")
             robot.back()
             shouldTurn = true
         end
@@ -46,5 +46,5 @@ end
 
 while true do
     step()
-    computer.beep(math.random() * (1500 - 300) + 300)
+    -- computer.beep(math.random() * (1500 - 300) + 300)
 end
